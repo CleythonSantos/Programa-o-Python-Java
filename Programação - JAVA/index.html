@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dieta+AI - Seu Guia de Nutrição</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dieta+AI</h1>
+    <p>"Pequenas escolhas hoje, grandes resultados amanhã."</p>
+  </header>
+
+  <main>
+    <section class="imc-section">
+      <h2>Calculadora de IMC</h2>
+      <div class="form">
+        <input type="number" id="peso" placeholder="Peso (kg)" />
+        <input type="number" id="altura" placeholder="Altura (m)" />
+        <button onclick="calcularIMC()">Calcular</button>
+        <p id="resultado"></p>
+      </div>
+    </section>
+
+    <section class="tdee-section">
+      <h2>Calculadora de Gasto Calórico Total (TDEE)</h2>
+      <div class="form">
+        <input type="number" id="idade" placeholder="Idade" />
+        <select id="sexo">
+          <option value="">Selecione o sexo</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+        <input type="number" id="pesoTdee" placeholder="Peso (kg)" />
+        <input type="number" id="alturaTdee" placeholder="Altura (cm)" />
+        <select id="atividade">
+          <option value="">Nível de Atividade</option>
+          <option value="1.2">Sedentário</option>
+          <option value="1.375">Levemente ativo</option>
+          <option value="1.55">Moderadamente ativo</option>
+          <option value="1.725">Muito ativo</option>
+          <option value="1.9">Extremamente ativo</option>
+        </select>
+        <button onclick="calcularTDEE()">Calcular TDEE e Macronutrientes</button>
+        <p id="resultadoTdee"></p>
+      </div>
+    </section>
+
+    <section class="dicas-section">
+      <h2>Dicas de Alimentação Saudável</h2>
+      <ul>
+        <li>🌿 Coma mais vegetais e frutas diariamente</li>
+        <li>🥤 Beba pelo menos 2 litros de água por dia</li>
+        <li>🍽️ Evite alimentos ultraprocessados</li>
+        <li>🕒 Mantenha uma rotina de horários para se alimentar</li>
+      </ul>
+    </section>
+    <section class="receitas-section">
+      <h2>Receitas Nutritivas</h2>
+      <div class="receitas">
+        <article>
+          <h3>Salada Colorida com Quinoa</h3>
+          <p>Rica em proteínas, fibras e minerais essenciais.</p>
+        </article>
+        <article>
+          <h3>Suco Detox Verde</h3>
+          <p>Combinação de couve, limão e gengibre. Refresca e desintoxica!</p>
+        </article>
+        <article>
+          <h3>Panqueca Integral de Banana</h3>
+          <p>Ideal para café da manhã saudável e sem açúcar refinado.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Dieta+AI - Desenvolvido para o seu bem-estar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
